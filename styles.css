@@ -1,0 +1,520 @@
+/* Global CSS */
+:root {
+    --black: #0D0D0D;
+    --off-white: #F2F2F2;
+    --lighter-blue: #7ABFBF;
+    --darker-blue: rgba(122, 191, 191, 0.5);
+    --link-color: #EB5428;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.hidden{
+    display: none;
+}
+/* End Global CSS */
+
+
+
+
+/* HTML CSS */
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* End HTML CSS */
+
+
+
+
+/* Body CSS */
+body {
+    background-color: rgba(122, 191, 191, 0.5);     /* couldn't call as a var() */
+    /* font-family: 'Arial', sans-serif; */
+    line-height: 1.6;
+    width: 1280px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+}
+/* End Body CSS */
+
+
+
+
+/* Header CSS */  
+header {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+header h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#sign-in
+{
+    margin: 0 0 0 0;               /* Top, Right, Bottom, Left */
+    padding: 0 40px 0 40px;
+}
+/* End Header CSS */
+
+
+
+
+/* Navigation CSS */  
+nav {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-color: white;
+    padding: 0px 0px 0px 0px;   /* Top, Right, Bottom, Left */
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav li {
+    padding: 20px 0px 0px 0px;    /* Top, Right, Bottom, Left */
+    margin: 0px 20px 0px 20px;     /* Top, Right, Bottom, Left */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* #hamburger {
+
+} */
+
+#logo {
+    display: flex;
+    height: 100%;                /* Fill out the nav vertically */
+    padding: 0 300px 0 0;        /* Top, Right, Bottom, Left */
+    margin: 0 0 0 0;             /* Top, Right, Bottom, Left */
+}
+
+#sign-in {
+    display: flex;
+    height: 100%;                /* Fill out the nav vertically */
+    padding: 20px 0px 0 75px;        /* Top, Right, Bottom, Left */
+    margin: 0 0 0 0;             /* Top, Right, Bottom, Left */
+}
+
+nav a {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: var(--link-color);   /* Text Color */
+    text-decoration: none;      /* Removes link underline */
+}
+
+nav img{
+    width: 50px; 
+    height: 50px; 
+    display: block;             /* Make the image a block element */
+    margin: 0 auto;             /* Center the image within the list item */
+}
+/* End Navigation CSS */
+
+
+
+
+/* Main Content CSS */
+main {
+    /* background-color: var(--lighter-blue); */
+    margin: 0;
+    padding: 0;
+}
+/* End Main Content CSS */
+
+
+
+
+/* Search Form CSS */
+#search {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+form {
+    background-color: var(--off-white);
+    padding: 40px 0px 0px 0px;              /* Top, Right, Bottom, Left */
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"] {
+    display: flex;
+    border: 2px solid #EB5428;
+    border-radius: 0px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    width: 20%;
+}
+
+button[type="submit"] {
+    justify-content: center;
+    background-color: #EB5428;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+/* End Search Form CSS */
+
+
+
+
+/* Street Tacos CSS */
+
+#street-tacos {                                       /* street Tacos */
+    display: grid;
+    grid-template-columns: .5fr 3fr 4fr;
+    grid-template-rows: .5fr 7fr;     /* Adjusts the height of the first and second rows */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+#street-tacos h2 {                                /* Street Tacos Heading */
+    grid-area: 1 / 1 / 2 / 6;                     /* row-start / column-start / row-end / column-end */
+    background-color: var(--off-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+}     
+
+#street-tacos .interaction-menu {               /* Interaction Menu */
+    grid-area: 2 / 1 / 8 / 2;                   /*row-start / column-start / row-end / column-end */
+    background-color: white;
+    border: 2px solid var(--link-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+}     
+
+        menu{
+            padding: 0 0 0 0;                       /* Top, Right, Bottom, Left */
+            margin: 0 0 0 0;
+        }
+        
+        menu ul {
+            list-style: none;
+            margin: 0;
+        }
+        
+        menu li {
+            list-style: none;                       /* Removes Bullets form Menu */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0px 10px 0px;           /* top, right, bottom, left */
+        }
+        
+        menu button {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            font-size: 16px;                        /* Set the font size */
+            background-color: white;              /* Set the background color */
+            color: var(--link-color);               /* Set the text color */
+            border: none;                           /* Remove the border */
+            /* padding: 10px 20px;                  /* Add padding to the button */
+            cursor: pointer;                        /* Change the cursor to a pointer on hover */
+            /* margin: 5px 0 0 0;                   /* Top, Right, Bottom, Left */
+        }   
+        
+        menu button:hover {
+            color: var(--darker-blue)
+        }
+
+        .taco-pic {                                 /* These are classes in the HTML */
+            grid-area: 2 / 2 / 8 / 3;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .taco-pic img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+.paragraphs {                                   /* Paragraphs */
+
+    background-color: var(--off-white);
+    grid-area: 2 / 3 / 8 / 6;                   /*row-start / column-start / row-end / column-end */
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 0px 10px 10px 10px;               /* top, right, bottom, left */
+    margin: 0px 0px 0px 0px;
+    height: auto;
+}   
+
+        #one {
+            padding: 0px 0px 20px 0px;              /* Top, Right, Bottom, Left */
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }    
+        
+        #two {
+            padding: 0px 0px 0px 0px;             /* Top, Right, Bottom, Left */
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+/* End Street Tacos CSS */
+
+
+
+
+/* Details CSS */
+#details {
+    background-color: var(--black);
+    color: var(--lighter-blue);
+    text-align: center;                     /* Center the text horizontally */
+    padding: 0px;                           /* Add some padding for spacing */
+}
+
+#details h2 {
+    margin: 0 0 10px 0;                        /* Top, Right, Bottom, Left */
+}
+
+#details ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;          /* Align items horizontally with space around them */
+    margin: 0;
+    padding: 0;                             /* Remove default padding */
+}
+
+#details li {
+    text-align: center;                     /* Center the text within list items */
+    margin: 10px;                           /* Add margin for spacing between items */
+}
+/* End Details CSS */
+
+
+
+#recipe {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ingredients {
+    background-color: var(--off-white);
+    color: var(--black);
+    width: 20%;                             /* Adjust the width as needed */
+    float: left;                            /* Float the Ingredients section to the left */
+}
+
+#ingredients h2 {
+    text-align: center;                     /* Centers header */
+}
+
+#ingredients ul li {
+    margin-bottom: 10px;                    /* Adds space between list items from the bottom */
+}
+
+#directions {
+    background-color: var(--off-white);
+    color: var(--black);
+    width: 80%;                             /* Adjust the width as needed */
+    float: right;                           /* Float the Directions section to the right */
+}
+
+#directions h2 {
+    text-align: center;                     /* Centers header */
+}
+
+#directions ol li {
+    margin-bottom: 10px;                    /* Adds space between list items from the bottom */
+}
+
+
+
+
+/* Side Dishes CSS */
+#side-dishes {
+    background-color: var(--darker-blue);
+    color: var(--black);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;         /* Distribute items evenly along the row */
+    flex-wrap: wrap;                       /* Allow items to wrap to the next line if there's not enough space */
+    padding: 20px;                         /* Add padding to the container */
+    margin: 0;
+}
+
+#side-dishes h2 {
+    width: 100%;
+    margin: 0 0 0 0;                        /* Top, Right, Bottom, Left */
+    
+}
+
+.side-dishes {
+    display: flex;
+    /* justify-content: space-around;          /* Distribute items evenly along the row */
+    /* flex-wrap: wrap;                        /* Allow items to wrap to the next line if there's not enough space */
+    margin: 0;
+}
+
+.side-dishes figcaption {
+    text-align: left;
+}
+
+.side-dishes figcaption span {
+    text-transform: uppercase; 
+    font-weight: bold; 
+}
+
+/* End Main CSS */
+
+
+
+
+  /* Footer CSS */
+footer {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: var(--off-white);
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+footer section {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    display: flex;
+    align-items: end;
+    list-style: none;
+    display: flex;
+    gap: 70px;                                 /* The gap between the icons */
+    padding: 0;
+    margin: 0 60px 0 auto;                     /* Top Right Bottom Left, changing left to auto shifted SVG to the Right. */
+}
+
+footer li {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--link-color);
+    text-transform: uppercase;
+}
+
+footer img {
+    height: 150px;
+    width: 150px;
+    display: block; 
+    margin: 0 0 0 0;                           /* Top Right Bottom Left */
+}
+
+footer p span {
+    color: var(--black);
+    text-transform: uppercase;
+    margin: 0px 10px 80px 10px;                /* Top Right Bottom Left */
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  /* End Footer CSS */
+
+
+
+  /* Media Query for screens at least 1280px wide */
+@media screen and (min-width: 1280px) {
+   
+    #main-navigation ul li:first-child {
+        display: none;
+    }
+}
+
+/* Media Query for screens at least 768px wide and up to 1279px wide */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    
+    #main-navigation ul li:first-child {
+        display: none;
+    }
+}
+
+/* Media Query for screens up to 767px wide */
+@media screen and (max-width: 767px) {
+   
+}
